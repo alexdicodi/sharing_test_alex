@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import argparse
+
+from sharing_test_alex.lib import try_me
+
+description = 'stkrgcp_description'
+parser = argparse.ArgumentParser(description=description)
+parser.add_argument('--name',
+                    nargs='+',
+                    help='your name',
+                    required=False)
+args = parser.parse_args()
+name = args.name
+print(try_me(name[0]))

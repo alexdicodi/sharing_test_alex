@@ -13,5 +13,5 @@ setup(name='sharing_test_alex',
       test_suite='tests',
       # include_package_data: to install data from MANIFEST.in
       include_package_data=True,
-      scripts=['scripts/sharing_test_alex-run'],
+      scripts=['scripts/sharing_test_alex-run', 'scripts/try_my_name'],
       zip_safe=False)
